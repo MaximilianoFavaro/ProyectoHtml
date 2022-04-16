@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+          <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <label for="menu" class="header__burguerMenu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__menu">
+          <label for="menu" class="header__closeMenu">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </label>
+          <ul>
+            <li ><a href="../pages/login.html">Iniciar Sesion</a></li>
+            <li><a href="../pages/registro.html">Registrate</a></li>
+            <li><a href="../pages/tutoriales.html">Tutoriales</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <form action="ruta-destino" method="post" enctype=""  ></form>
+            <fieldset id="fieldset__form">
+                <section id="fieldset__sec">
+                    <section class="form__login" id="form__labels">
+                        <label class="__labels" id="label__usuario" for="usuario">Usuario</label>
+                        <label class="__labels" id="label__password" for="pass">Contraseña</label>
+                    </section>
+
+                    <section class="form__login" id="form__fields">
+                        <input class="__fields" type="text" name="usuario" id="usuario" placeholder="*Usuario" required>                     
+                        <input class="__fields" type="password" name="pass" id="pass" placeholder="*Contraseña" required>
+                    </section>
+                    <section class="form__login" id="form__buttons" >
+                        <button class="__fields__button" id="login" type="submit">Ingresar</button>
+                        <button class="__fields__button" id="cancel" type="reset">Cancelar</button> 
+                    </section>  
+                </section>         
+            </fieldset>       
+    </main>
+    <footer>
+        <section id="footer__links">                           
+            <a class="footer__a" href="">Quienes somos</a>
+            <a class="footer__a" href="">Nuestras Redes</a>
+            <a class="footer__a" href="">Nuestros Clientes</a>
+            <a class="footer__a" href="../pages/contacto.html">Contacto</a>            
+        </section>
+    </footer>  
+    
+</body>
+</html>

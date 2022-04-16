@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <title>Registrate</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+          <a href="../index.html">
+            <img src="../images/logo.jpg" alt="logo" />
+          </a>
+        </div>
+        <label for="menu" class="header__burguerMenu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__menu">
+          <label for="menu" class="header__closeMenu">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </label>
+          <ul>
+            <li ><a href="../pages/login.html">Iniciar Sesion</a></li>
+            <li><a href="../pages/registro.html">Registrate</a></li>
+            <li><a href="../pages/tutoriales.html">Tutoriales</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <section id="main__form">
+            <form class="main__form" action="destino" method="post" enctype="" ></form>
+            <fieldset id="fieldset__form" >
+                <legend id="legend__form"><p id="form__header__registro"> Registrate con nosotros</p></legend>            
+                    <section class="singup__form" id="__labels">
+                        <label class="singup__labels" for="nombre">Nombre</label>
+                        <label class="singup__labels" for="apellido">Apellido</label>
+                        <label class="singup__labels" for="telefono">Telefono </label>
+                        <label class="singup__labels" for="mail">Mail</label>
+                        <label class="singup__labels" for="provincia">Provincia</label>
+                        <label class="singup__labels" for="solicitante">Solicitante</label>
+                    </section>
+                    <section class="singup__form" id="__fields">                   
+                        <input class="singup__field"  type="text" name="nombre" id="nombre" required>               
+                        <input class="singup__field" type="text" name="apellido" id="apellido" required >    
+                        <input class="singup__field" type="tel" name="telefono" id="telefono" required>                
+                        <input class="singup__field" type="email" name="mail" id="mail" required>                   
+                        <select class="singup__field" name="provincia" required>
+                            <option value="" hidden selected>Elije una provincia</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Rio Negro">Rio Negro</option>
+                        </select>
+                        <select class="singup__field" name="solicitante" required>
+                            <option value="" hidden selected>Solicitante</option>
+                            <option value="Parking">Parking</option>
+                            <option value="Conductor">Conductor</option>                         
+                        </select>          
+                        <p class="singup__field" id="p__field"><strong> En caso que se requiera mas información para completar el registro se notificará por correo</strong></p>
+                        <button class="singup__button" type="submit" >Confirmar</button> 
+                        <button class="singup__button" type="reset">Cancelar</button> 
+                    </section>
+            </fieldset >
+        </section>
+
+     </main>
+     <footer>
+        <section id="footer__links">                           
+            <a class="footer__a" href="">Quienes somos</a>
+            <a class="footer__a" href="">Nuestras Redes</a>
+            <a class="footer__a" href="">Nuestros Clientes</a>
+            <a class="footer__a" href="../pages/contacto.html">Contacto</a>            
+        </section>
+    </footer>  
+</body>
+</html>
