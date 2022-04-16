@@ -169,12 +169,11 @@
       justify-content: space-evenly;
     }
     /*Animaciones y transiciones*/
-    .header__links{
-        transition: all 0.5s ease-in;
-    }
+    
     .header__links:hover{
+        transition: all 0.5s ease-in;
         transform: scale(1.2);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+       /* box-shadow: 0 0 15px rgba(0, 0, 0, 1);*/
         
     } 
  
@@ -365,6 +364,7 @@ main .body__grid img {
     
 }
 
+
 /*   END CONTACTO   */
 
 /*  TUTORIALES */
@@ -487,6 +487,12 @@ main{
    #form__fields{
        display: block;
     }
+    .header__links:hover{
+        transition: all 0.5s ease-in;
+        transform: scale(1.2);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        
+    } 
 
  
 }
