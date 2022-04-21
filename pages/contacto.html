@@ -7,68 +7,91 @@
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <title>Contacto</title>
+    <!-- Bootstrap CDN stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+           crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-          <a href="../index.html">
-            <img src="../images/logo.jpg" alt="logo" />
-          </a>
+     <!-- Header -->    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-evenly">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" width="50px" height="50px" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link text-center" href="../pages/login.html">Iniciar Sesion</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-center" href="../pages/registro.html">Registrate</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-center" href="../pages/tutoriales.html">Tutoriales</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-center" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+    <main> 
+      <form class="row g-3 padding mx-auto">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputEmail4">
         </div>
-        <label for="menu" class="header__burguerMenu">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="header__menu">
-          <label for="menu" class="header__closeMenu">
-            <i class="fa-solid fa-circle-xmark"></i>
-          </label>
-          <ul>
-            <li class="header__links" ><a href="../pages/login.html">Iniciar Sesion</a></li>
-            <li class="header__links" ><a href="../pages/registro.html">Registrate</a></li>
-            <li class="header__links" ><a href="../pages/tutoriales.html">Tutoriales</a></li>
-            <li class="header__links" ><a href="../pages/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-    <main>
-        <form action="ruta-destino" method="get" enctype="" class="form__contacto"  ></form>
-            <fieldset class="fieldset__contacto" >
-                <legend id="legend__form" ><h2 id="form__header">Dejanos tu consulta</h2></legend>
-                <section class="form__section" id="section__label">                
-                    <label class="__labels" for="nombre">Nombre</label>
-                    <label class="__labels" for="apellido">Apellido</label>
-                    <label class="__labels" for="telefono">Telefono (Opcional)</label>
-                    <label class="__labels" for="mail">Mail</label>
-                    <label class="__labels" for="provincia">Provincia</label>                    
-                </section>
-                <section class="form__section" id="section__field">
-                
-                    <input class="form__field" type="text" name="nombre" id="nombre" required>
-                    <input class="form__field" type="text" name="apellido" id="apellido" required >
-                    <input class="form__field" type="tel" name="telefono" id="telefono">
-                    <input class="form__field" type="email" name="mail" id="mail" required> 
-                            <select class="form__field" name="provincia">
-                            <option value="" hidden selected>Elije una provincia</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Rio Negro">Rio Negro</option>
-                            </select>                  
-                    <textarea class="form__field" name="textArea" id="text__area" cols="30" rows="20" placeholder="Envianos tu consulta aqui"></textarea>
-                    <button type="submit" class="form__buttons" >Enviar</button> <button class="form__buttons" type="reset">Limpiar</button> 
-                </section>              
-                
-            </fieldset>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Telefono (Opcional)</label>
+          <input type="tel" class="form-control" id="inputAddress" placeholder="(0000) 000-0000">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Mail</label>
+          <input type="email" class="form-control" id="inputAddress2" >
+        </div>              
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Provincia</label>
+          <select id="inputState" class="form-select">
+            <option value="" hidden selected>Elije una provincia</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Rio Negro">Rio Negro</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Envianos tu consulta</label>
+          <textarea class="form-control" name="textArea" id="text__area" cols="100" rows="10" placeholder="Envianos tu consulta aqui"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" >Enviar</button> <button class="btn btn-primary" type="reset">Limpiar</button> 
+          
+        </div>
+      </form>
+
     </main>
-    <footer>
-        <section id="footer__links">                           
-            <a class="footer__a" href="">Quienes somos</a>
-            <a class="footer__a" href="">Nuestras Redes</a>
-            <a class="footer__a" href="">Nuestros Clientes</a>
-            <a class="footer__a" href="../pages/contacto.html">Contacto</a>            
-        </section>
-    </footer>  
+   <!-- footer -->
+   <div class="container-fluid row justify-content-evenly" style="background-color:rgb(182, 182, 182)">
+
+    <div class="col-3 text-center fs-5"> <a class="text-decoration-none text-dark" href="#">Nuestras Redes</a> </div>
+    <div class="col-3 text-center fs-5"> <a class="text-decoration-none text-dark" href="#">Quienes Somos</a> </div>
+    <div class="col-3 text-center fs-5"> <a class="text-decoration-none text-dark" href="#">Nuestros Clientes</a> </div>
+    <div class="col-3 text-center fs-5"> <a class="text-decoration-none text-dark" href="./pages/contacto.html">Contacto</a> </div>
+  
+  </div>
+  <!-- end footer -->
+    
+  <!-- bootstrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
     
 </body>
 </html>
