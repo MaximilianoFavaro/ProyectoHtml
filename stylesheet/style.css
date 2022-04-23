@@ -1,0 +1,3 @@
+.header__links:hover {
+    transform: scale(1.1) translatey(-5px);
+}
