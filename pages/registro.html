@@ -43,36 +43,55 @@
         <section id="main__form">
             <form class="main__form" action="destino" method="post" enctype="" ></form>
             <fieldset id="fieldset__form" >
-                <legend id="legend__form"><p id="form__header__registro"> Registrate con nosotros</p></legend>            
-                    <section class="singup__form" id="__labels">
-                        <label class="singup__labels" for="nombre">Nombre</label>
-                        <label class="singup__labels" for="apellido">Apellido</label>
-                        <label class="singup__labels" for="telefono">Telefono </label>
-                        <label class="singup__labels" for="mail">Mail</label>
-                        <label class="singup__labels" for="provincia">Provincia</label>
-                        <label class="singup__labels" for="solicitante">Solicitante</label>
-                    </section>
-                    <section class="singup__form" id="__fields">                   
-                        <input class="singup__field"  type="text" name="nombre" id="nombre" required>               
-                        <input class="singup__field" type="text" name="apellido" id="apellido" required >    
-                        <input class="singup__field" type="tel" name="telefono" id="telefono" required>                
-                        <input class="singup__field" type="email" name="mail" id="mail" required>                   
-                        <select class="singup__field" name="provincia" required>
+                <legend id="legend__form"><p id="form__header__registro"> Registrate con nosotros</p></legend>               
+                    <div class="nombre__fields">
+                      <label class="singup__labels" for="nombre">Nombre</label>             
+                      <input class="singup__field"  type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="apellido__fields">
+                      <label class="singup__labels" for="apellido">Apellido</label>
+                        <input class="singup__field" type="text" name="apellido" id="apellido" placeholder="Apellido" required >
+                    </div>
+
+                    <div class="phone__fields">
+                      <label class="singup__labels" for="telefono">Telefono </label>
+                        <input class="singup__field" type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+                    </div>
+
+                    <div class="mail__fields">
+                      <label class="singup__labels" for="mail">Mail</label>
+                      <input class="singup__field" type="email" name="mail" id="mail" placeholder="Email" required> 
+                    </div>
+
+                    <div class="prov__fields">
+                      <label class="singup__labels" for="provincia">Provincia</label>
+                        <select class="singup__field" name="provincia"  required>
                             <option value="" hidden selected>Elije una provincia</option>
                             <option value="Cordoba">Cordoba</option>
                             <option value="Buenos Aires">Buenos Aires</option>
                             <option value="Mendoza">Mendoza</option>
                             <option value="Rio Negro">Rio Negro</option>
                         </select>
-                        <select class="singup__field" name="solicitante" required>
-                            <option value="" hidden selected>Solicitante</option>
-                            <option value="Parking">Parking</option>
-                            <option value="Conductor">Conductor</option>                         
-                        </select>          
-                        <p class="singup__field" id="p__field"><strong> En caso que se requiera mas información para completar el registro se notificará por correo</strong></p>
-                        <button class="singup__button" type="submit" >Confirmar</button> 
-                        <button class="singup__button" type="reset">Cancelar</button> 
-                    </section>
+                    </div>
+
+                    <div class="solic__fields">
+                      <label class="singup__labels" for="solicitante">Solicitante</label>
+                      <select class="singup__field" name="solicitante" required>
+                          <option value="" hidden selected>Solicitante</option>
+                          <option value="Parking">Parking</option>
+                          <option value="Conductor">Conductor</option>                         
+                      </select>  
+                    </div>
+
+                    <div class="comment__form">
+                      <p class="singup__comment" id="p__field"><strong> En caso que se requiera mas información para completar el registro se notificará por correo</strong></p>
+                    </div>
+
+                    <div class="form__buttons">  
+                      <button class="singup__button" type="submit" >Confirmar</button> 
+                      <button class="singup__button" type="reset">Cancelar</button> 
+                    </div>                 
             </fieldset >
         </section>
 

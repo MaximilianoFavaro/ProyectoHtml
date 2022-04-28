@@ -1,3 +1,38 @@
 .header__links:hover {
-    transform: scale(1.1) translatey(-5px);
-}
+  transform: scale(1.1) translatey(-5px); }
+
+#fieldset__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  #fieldset__form #legend__form #form__header__registro {
+    text-align: center; }
+  #fieldset__form .singup__labels {
+    display: none;
+    /*height: 25px;
+        width: 75px;*/ }
+  #fieldset__form .singup__field {
+    width: 200px;
+    height: 35px;
+    margin: 10px; }
+  #fieldset__form .singup__button {
+    margin-left: 0px;
+    margin-right: 5px;
+    width: 90px;
+    height: 35px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
+  #fieldset__form .form__buttons {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 10px; }
+
+@media screen and (min-width: 768px) {
+  #fieldset__form {
+    background-color: #afaeae; }
+    #fieldset__form .singup__labels {
+      display: flex;
+      width: 200px;
+      height: 35px;
+      padding: 10px;
+      align-items: center; } }

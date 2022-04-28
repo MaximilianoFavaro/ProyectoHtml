@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/scss.scss stylesheet/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianoFavaro/ProyectoHtml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianoFavaro/ProyectoHtml/issues"
+  },
+  "homepage": "https://github.com/MaximilianoFavaro/ProyectoHtml#readme",
+  "description": ""
+}

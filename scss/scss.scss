@@ -1,0 +1,53 @@
+@import 'variables';
+
+.header__links:hover {
+    transform: scale(1.1) translatey(-5px);
+}
+
+#fieldset__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #legend__form{
+        #form__header__registro{
+            text-align: center;
+        }
+    }
+    .singup__labels{
+        display:none;        
+        /*height: 25px;
+        width: 75px;*/
+    }
+    .singup__field{
+        width: $width;
+        height: $heigth;
+        margin: 10px;        
+    }
+    .singup__button{
+        margin-left: 0px;
+        margin-right: 5px;        
+        width: 90px;
+        height: 35px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form__buttons{
+        width: $width;
+        height: $heigth;
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (min-width: 768px){
+    #fieldset__form{
+        background-color: $backgroundColor;
+        .singup__labels{
+            display: flex;
+            width: $width;
+            height: $heigth;
+            padding: 10px;
+            align-items: center;
+        }
+
+    }
+}
