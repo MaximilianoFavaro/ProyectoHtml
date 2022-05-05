@@ -1,3 +1,46 @@
+.div, .div__item {
+  background-color: #e44a4a;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  justify-content: center;
+  align-items: center; }
+
+.a, .div__item a {
+  margin-top: 40px !important; }
+
+.singup__button {
+  height: 40px !important;
+  width: 120px !important; }
+
+.nombre__fields {
+  background-color: #619161; }
+
+.apellido__fields {
+  background-color: #619161; }
+
+.phone__fields {
+  background-color: #619161; }
+
+.mail__fields {
+  background-color: #619161; }
+
+.prov__fields {
+  background-color: #619161; }
+
+.solic__fields {
+  background-color: #619161; }
+
+.singup__labels {
+  background-color: #619161;
+  color: white;
+  margin-left: 10px; }
+
+#fieldset__form {
+  background-color: #7696d3 !important; }
+
+.footer__div {
+  background-color: #e44a4a; }
+
 .header__links:hover {
   transform: scale(1.1) translatey(-5px); }
 
@@ -23,9 +66,13 @@
     height: 35px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
   #fieldset__form .form__buttons {
-    width: 200px;
+    width: 300px;
     height: 35px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row; }
 
 @media screen and (min-width: 768px) {
   #fieldset__form {

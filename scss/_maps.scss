@@ -1,0 +1,39 @@
+$label: (
+    colorFont: white,
+    backgroundColor: rgb(118, 150, 211),
+    formBackground: rgb(97, 145, 97),
+    footerBackground: rgb(228, 74, 74) 
+
+);
+
+.nombre__fields{
+    background-color: map-get($label,formBackground);
+}
+.apellido__fields{
+    background-color: map-get($label,formBackground);
+}
+.phone__fields{
+    background-color: map-get($label,formBackground);
+}
+.mail__fields{
+    background-color: map-get($label,formBackground);
+}
+.prov__fields{
+    background-color: map-get($label,formBackground);
+}
+.solic__fields{
+    background-color: map-get($label,formBackground);
+}
+
+.singup__labels{
+    background-color: map-get($label, formBackground );
+    color: map-get($label, colorFont );
+    margin-left:10px;
+}
+#fieldset__form{
+    background-color: map-get($label, backgroundColor ) !important;
+}
+
+.footer__div{
+    background-color: map-get($label,footerBackground);
+}

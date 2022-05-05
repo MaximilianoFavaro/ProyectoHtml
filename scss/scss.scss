@@ -1,4 +1,8 @@
 @import 'variables';
+@import 'extend';
+@import 'mixins';
+@import 'maps';
+
 
 .header__links:hover {
     transform: scale(1.1) translatey(-5px);
@@ -32,9 +36,13 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     }
     .form__buttons{
-        width: $width;
+        width: $divButtonsWidth;
         height: $heigth;
         margin-bottom: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
     }
     
 }
