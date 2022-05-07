@@ -8,6 +8,20 @@
 .a, .div__item a {
   margin-top: 40px !important; }
 
+.div__login, #form__labels, #form__fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 30px; }
+
+.div__buttons, #form__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px; }
+
 .singup__button {
   height: 40px !important;
   width: 120px !important; }
@@ -40,6 +54,27 @@
 
 .footer__div {
   background-color: #e44a4a; }
+
+.div__buttons, #form__buttons {
+  height: 70px; }
+
+.div__buttons button, #form__buttons button {
+  width: 200px;
+  margin: 10px !important;
+  background-color: white;
+  color: black !important; }
+
+/*.div__textarea{
+    width: map-get($divContact, textareaSize) !important;*/
+@media screen and (min-width: 320px) {
+  .div__textarea {
+    width: 500px !important; }
+  .form-control {
+    margin: 10px; }
+  .form-label {
+    margin: 10px; }
+  .form__contact {
+    background-color: #7696d3; } }
 
 .header__links:hover {
   transform: scale(1.1) translatey(-5px); }

@@ -44,21 +44,20 @@
     <main>
         <form action="ruta-destino" method="post" enctype=""  ></form>
             <fieldset id="fieldset__form">
-                <section id="fieldset__sec">
-                    <section class="form__login" id="form__labels">
+                <div id="fieldset__sec">
+                    <div class="form__login" id="form__labels">
                         <label class="__labels" id="label__usuario" for="usuario">Usuario</label>
-                        <label class="__labels" id="label__password" for="pass">Contraseña</label>
-                    </section>
-
-                    <section class="form__login" id="form__fields">
-                        <input class="__fields" type="text" name="usuario" id="usuario" placeholder="*Usuario" required>                     
-                        <input class="__fields" type="password" name="pass" id="pass" placeholder="*Contraseña" required>
-                    </section>
-                    <section class="form__login" id="form__buttons" >
+                        <input class="__fields" type="text" name="usuario" id="usuario" placeholder="*Usuario" required>     
+                    </div>
+                    <div class="form__login" id="form__fields">
+                      <label class="__labels" id="label__password" for="pass">Contraseña</label>                    
+                      <input class="__fields" type="password" name="pass" id="pass" placeholder="*Contraseña" required>
+                    </div>
+                    <div class="form__login" id="form__buttons" >
                         <button class="__fields__button" id="login" type="submit">Ingresar</button>
                         <button class="__fields__button" id="cancel" type="reset">Cancelar</button> 
-                    </section>  
-                </section>         
+                    </div>  
+                </div>         
             </fieldset>       
     </main>
   <!-- footer -->
