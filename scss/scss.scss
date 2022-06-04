@@ -7,6 +7,9 @@
 .header__links:hover {
     transform: scale(1.1) translatey(-5px);
 }
+*{
+    box-sizing: border-box;
+}
 
 #fieldset__form{
     display: flex;
@@ -92,6 +95,8 @@
 .sec__cont {
     background-color: grey;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
+    margin: 10px !important;
     padding: 10px !important;
 }
 .main__container{
@@ -102,33 +107,111 @@
 .text__body{
     margin-top: 10px;
 }
-.foot__divs{
-    
-    width: 250px !important;
-    height: 40px;
+.slide img {
+    height: 30vh;
+}
 
+@media screen and (min-width: 768px){
+    .slide img {
+        height: 40vh;
+    }
+    
+} 
+@media screen and (min-width: 1280px){
+    .slide img {
+        height: 70vh;
+        
+    }
+    .div__slide{
+        width: 80% !important;
+        margin-left:10%;       
+        
+    }
+    
+} 
+.indicators__{       
+    background-color: black !important;
+    width: 10% !important;
 }
-.footer__main{
+.container__body{    
+    padding: 10px; 
+    width: 100%;
+    margin-left: 0px !important;  
+    margin-right: 0px !important; 
     
-    margin: 20px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+    .img__icons{
+        width: 70px;
+        height: 50px;
+        margin-left:35%;
+        margin-top:5%;   
+        margin-bottom: 5%;    
+    }
+    .mechanic__container{        
+        padding: 5px;
+        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
+        height: 250px;
+        width: 300px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    .carwash__container{        
+        padding: 5px;
+        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
+        height: 250px;
+        width: 300px;
+        margin: 5px;
+        border: 1px solid black;
     
-}
-.div__container{ 
-    
-    margin: 0px;
-    height: 50px;
+    }
+    .safety__container{        
+        padding: 5px;
+        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
+        height: 250px;
+        width: 300px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    .text__content{              
+        font-size: 13px;
+        text-align: center;
+        margin: 10px;
+        
+    }
+    @media screen and (min-width: 768px) {
 
+        .container__body{
+            .mechanic__container{
+                width: 250px;
+            }
+            .carwash__container{
+                width: 250px;
+            }
+            .safety__container{ 
+                width: 250px;
+            }  
+        
+        }
+    }
+   
 }
-.foot__links{
-    height: 30px;
-    padding: 3px;
-    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+.div__container{
     
-    
+    margin-top:20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100%;
+    .foot__divs{        
+        margin:3px;        
+        padding: 5px;        
+    }
+    .foot__links{
+        width: 100%;
+        height: 30px;
+        text-align: center;       
+        border: 1px solid black
+    }
 }
+
+
+    
+
