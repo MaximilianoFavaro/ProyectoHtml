@@ -27,17 +27,18 @@
       </button>
       <div class="collapse navbar-collapse collapse__container " id="navbarSupportedContent">
         <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">
+          <!-- <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">  -->
           <div class="nav-item col div__item d-flex align-items-center justify-content-center  ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
+            <a class="nav-link text-center fw-bold shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
+            <a class="nav-link text-center shadow-lg fw-bold  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
           </div>
         </div>        
       </div>
@@ -45,73 +46,68 @@
   </nav>
   <!-- header -->
     <main>
-        <section id="main__form">
-            <form class="main__form" action="destino" method="post" enctype="" ></form>
-            <fieldset id="fieldset__form" >
-                <legend id="legend__form"><p id="form__header__registro"> Registrate con nosotros</p></legend>               
-                    <div class="nombre__fields">
-                      <label class="singup__labels" for="nombre">Nombre</label>             
-                      <input class="singup__field"  type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                    </div>
+      <div class="signup__container">
+        <form class="main__form" action="destino" method="post" enctype="" >        
+          <legend class="legend__form">
+            <p class="form__header__registro"> Registrate con nosotros</p>
+          </legend>               
+          <div class="signup__div">                        
+            <input class="singup__field form-control"  type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="signup__div">            
+            <input class="singup__field form-control" type="text" name="apellido" id="apellido" placeholder="Apellido" required >
+          </div>
+          <div class="signup__div">            
+            <input class="singup__field form-control" type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+          </div>
+          <div class="signup__div">            
+            <input class="singup__field form-control" type="email" name="mail" id="mail" placeholder="Email" required> 
+          </div>
+          <div class="signup__div">            
+            <select class="singup__field form-select" name="provincia"  required>
+                <option value="" hidden selected>Elije una provincia</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Rio Negro">Rio Negro</option>
+            </select>
+          </div>
+          <div class="signup__div">            
+            <select class="singup__field form-select" name="solicitante" required>
+                <option value="" hidden selected>Solicitante</option>
+                <option value="Parking">Parking</option>
+                <option value="Conductor">Conductor</option>                         
+            </select>  
+          </div>          
+          <div class="signup__div">  
+            <button class="singup__button btn btn-primary" type="submit" >Confirmar</button> 
+            <button class="singup__button btn btn-primary" type="reset">Cancelar</button> 
+          </div> 
+        </form>
+        <div class="comment__form">
+          <p class="singup__comment" id="p__field"><strong> En caso que se requiera mas información para completar el registro se notificará por correo</strong></p>
+        </div>
+      </div>
+                        
+        
+     
 
-                    <div class="apellido__fields">
-                      <label class="singup__labels" for="apellido">Apellido</label>
-                        <input class="singup__field" type="text" name="apellido" id="apellido" placeholder="Apellido" required >
-                    </div>
-
-                    <div class="phone__fields">
-                      <label class="singup__labels" for="telefono">Telefono </label>
-                        <input class="singup__field" type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
-                    </div>
-
-                    <div class="mail__fields">
-                      <label class="singup__labels" for="mail">Mail</label>
-                      <input class="singup__field" type="email" name="mail" id="mail" placeholder="Email" required> 
-                    </div>
-
-                    <div class="prov__fields">
-                      <label class="singup__labels" for="provincia">Provincia</label>
-                        <select class="singup__field" name="provincia"  required>
-                            <option value="" hidden selected>Elije una provincia</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Rio Negro">Rio Negro</option>
-                        </select>
-                    </div>
-
-                    <div class="solic__fields">
-                      <label class="singup__labels" for="solicitante">Solicitante</label>
-                      <select class="singup__field" name="solicitante" required>
-                          <option value="" hidden selected>Solicitante</option>
-                          <option value="Parking">Parking</option>
-                          <option value="Conductor">Conductor</option>                         
-                      </select>  
-                    </div>
-
-                    <div class="comment__form">
-                      <p class="singup__comment" id="p__field"><strong> En caso que se requiera mas información para completar el registro se notificará por correo</strong></p>
-                    </div>
-
-                    <div class="form__buttons">  
-                      <button class="singup__button" type="submit" >Confirmar</button> 
-                      <button class="singup__button" type="reset">Cancelar</button> 
-                    </div>                 
-            </fieldset >
-        </section>
-
-     </main>
+    </main>
  <!-- footer -->
- <div class="footer__main">
-  <div class="div__container container-fluid d-flex justify-content-evenly align-items-center row " >
-
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestras Redes</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Quienes Somos</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestros Clientes</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="./pages/contacto.html">Contacto</a> </div>
-  
+ <div class="div__container rounded " >
+  <div class="foot__divs  rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestras Redes </a> 
   </div>
-</div>
+  <div class="foot__divs  rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/quienesSomos.html">Quienes Somos </a> 
+  </div>
+  <div class="foot__divs rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestros Clientes </a> 
+  </div>
+  <div class="foot__divs rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/contacto.html">Contacto </a> 
+  </div>    
+</div> 
 <!-- end footer -->
     
   <!-- bootstrap scripts -->

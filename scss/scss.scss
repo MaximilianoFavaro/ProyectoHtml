@@ -4,64 +4,13 @@
 @import 'maps';
 
 
-.header__links:hover {
-    transform: scale(1.1) translatey(-5px);
-}
+/*.header__links:hover {
+   
+}*/
 *{
     box-sizing: border-box;
 }
-
-#fieldset__form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    #legend__form{
-        #form__header__registro{
-            text-align: center;
-        }
-    }
-    .singup__labels{
-        display:none;        
-        /*height: 25px;
-        width: 75px;*/
-    }
-    .singup__field{
-        width: $width;
-        height: $heigth;
-        margin: 10px;        
-    }
-    .singup__button{
-        margin-left: 0px;
-        margin-right: 5px;        
-        width: 90px;
-        height: 35px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    .form__buttons{
-        width: $divButtonsWidth;
-        height: $heigth;
-        margin-bottom: 10px;
-        align-items: center;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: row;
-    }
-    
-}
-@media screen and (min-width: 768px){
-    #fieldset__form{
-        background-color: $backgroundColor;
-        .singup__labels{
-            display: flex;
-            width: $width;
-            height: $heigth;
-            padding: 10px;
-            align-items: center;
-        }
-
-    }
-}
+/*header*/
 .collapse__container{    
     padding: 10px !important;
     
@@ -72,7 +21,8 @@
 }
 .header__nav{   
     padding: 10px;
-    margin:5px;
+    width: 97% !important;
+    margin: 10px 1.5% 10px 1.5% !important;
 }
 .div__item{    
     height: 75px;
@@ -80,7 +30,7 @@
 }
 .header__links {
     border: 1px solid black;
-    margin: 0px !important;
+    margin: 10px !important;
     width: 120px;    
 }
 .link__home{    
@@ -92,8 +42,11 @@
     width: 100px;
     height: 100px;
 }
+/*end header*/
+
+/*body*/
 .sec__cont {
-    background-color: grey;
+    background-color:lightgray;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     width: 100% !important;
     margin: 10px !important;
@@ -102,13 +55,17 @@
 .main__container{
     padding-left: 30px;
     padding-right: 30px;
-    margin: 0px;
+    width: 97%;
+    margin: 10px 1.5% 10px 1.5%;
 }
 .text__body{
     margin-top: 10px;
 }
 .slide img {
     height: 30vh;
+}
+.img__carousel{
+    object-fit: contain;
 }
 
 @media screen and (min-width: 768px){
@@ -144,35 +101,36 @@
         height: 50px;
         margin-left:35%;
         margin-top:5%;   
-        margin-bottom: 5%;    
+        margin-bottom: 5%; 
+        object-fit:scale-down;   
     }
     .mechanic__container{        
-        padding: 5px;
-        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 5px;        
         height: 250px;
         width: 300px;
         margin: 5px;
         border: 1px solid black;
+        background-color:lightgray;
     }
     .carwash__container{        
         padding: 5px;
-        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
         height: 250px;
         width: 300px;
         margin: 5px;
         border: 1px solid black;
+        background-color:lightgray;
     
     }
     .safety__container{        
-        padding: 5px;
-        box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 5px;        
         height: 250px;
         width: 300px;
         margin: 5px;
         border: 1px solid black;
+        background-color:lightgray;
     }
     .text__content{              
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
         margin: 10px;
         
@@ -194,24 +152,262 @@
     }
    
 }
+/*end body*/
+
+/*footer*/
 .div__container{
+    border: 1px solid black;
+    width: 97%;
+    margin: 10px 1.5% 10px 1.5%;
+    padding: 10px;
+    @extend .flexcolumn__evenlyextend;    
+    background-color:lightgray;
     
-    margin-top:20px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    width: 100%;
-    .foot__divs{        
-        margin:3px;        
-        padding: 5px;        
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        .foot__divs{
+            margin: 10px 5px 10px 5px;
+        }
+
+        
     }
-    .foot__links{
-        width: 100%;
-        height: 30px;
-        text-align: center;       
-        border: 1px solid black
+    .foot__divs{
+        margin: 10px 5px 10px 5px;
     }
+    .foot__divs:hover {
+        background-color:white;
+    }
+
 }
 
 
-    
+/*end footer*/
+/*Login*/
+.form__container__login{
+    width: 97% ;
+    margin: 10px 1.5% 10px 1.5%;    
+    @extend .flexcolumn__extend;
+    padding: 10px 0px 10px 0px;
 
+    .form__login {        
+        @extend .flexcolumn__extend;
+        padding: 10px;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+
+        
+    }
+
+}
+
+.check__label{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+/*End login*/
+
+/*Contacto*/
+.form__container__contact{
+    width: 90%;
+    margin:10px 5% 10px 5%;
+    padding: 20px;
+    background-color: lightgray;  
+    
+}
+.form__contact{
+    padding: 10px;
+    border: 1px solid black;
+   
+}
+.div__fields{
+    margin: 5px;
+}
+/*End contacto*/
+
+/*Registro*/
+
+.signup__container{
+    width:map-get($map__with , mapWidth );    
+    margin:map-get($map__with, mapMargin);
+    @extend .flexcolumn__extend;
+    .main__form {
+        background-color: lightgrey;
+        width: 300px;
+        
+    }
+    .legend__form{       
+        
+        @extend .flexcolumn__extend;
+        .form__header__registro{
+            text-align: center;
+            font-size: 20px;
+        }
+    }    
+    .signup__div{
+        margin: 10px;
+    }
+    .singup__button{
+        width: 100px;
+        margin: 3px !important;
+    }
+}
+/*End Registro*/
+
+/*Tutoriales*/
+.tutoriales__tittle{
+    width:map-get($map__with , mapWidth );    
+    margin:map-get($map__with, mapMargin);
+    @extend .flexrow__extend;
+
+}
+.tutoriales__container{
+    width:map-get($map__with , mapWidth );    
+    margin:map-get($map__with, mapMargin);
+    @extend .flexcolumn__extend;
+}
+@media screen and (min-width:512px) 
+{
+    .youtube__tutorial{
+        width: 480px;
+        height: 320px;
+        margin:10px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .youtube__tutorial{
+        width: 750px;
+        height: $youtubeHeigth;
+        margin:10px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .youtube__tutorial{
+        width: 1280px;
+        height: $youtubeHeigth;
+        margin:15px;
+    }
+}
+.text__h3{
+    text-align: center;
+}
+/*End Tutoriales*/
+    
+/*Quienes Somos*/
+.somos__main{   
+    width:map-get($map__with , mapWidth );    
+    margin:map-get($map__with, mapMargin);
+    @extend .flexcolumn__extend;
+
+    .historia__empresa{
+        @extend .flexcolumn__extend;
+        margin: 20px 0px 20px 0px;
+        .img__historia{
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+        .parrafo__historia{
+            text-align: justify;
+            width: 300px;
+            height: 300px;
+            font-size: 20px;
+            @extend .flexcolumn__extend;
+        }
+    }
+    .proposito__empresa{
+        @extend .flexcolumn__extend;
+        margin: 20px 0px 20px 0px;
+        
+        .img__proposito{
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+        .parrafo__proposito{
+            text-align: justify;
+            width: 300px;
+            height: 300px;
+            font-size: 20px;
+            @extend .flexcolumn__extend;
+        }
+    }
+    @media screen and (min-width:768px) {
+
+        .img__proposito{
+            margin-right: 20px;
+        }
+        .img__historia {
+            margin-right: 20px;
+        }
+
+        .proposito__empresa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .historia__empresa{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                margin: 20px 0px 20px 0px;
+        }
+        
+    }
+    @media  screen and (min-width:1280px) {
+        .proposito__empresa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 97%;
+            margin: 20px 0px 20px 0px;
+            .parrafo__proposito{
+                text-align: justify;
+                width: 97%;
+                height: 300px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+        .img__proposito{
+            margin-right: 20px;
+        }
+        .img__historia {
+            margin-right: 20px;
+        }
+
+        .historia__empresa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 20px 0px 20px 0px;
+            width: 97%;
+            .parrafo__historia{
+                text-align: justify;
+                width: 97%;
+                height: 300px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+}
+/*End quienes somos*/

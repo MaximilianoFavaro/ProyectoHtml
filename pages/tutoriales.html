@@ -27,58 +27,64 @@
       </button>
       <div class="collapse navbar-collapse collapse__container " id="navbarSupportedContent">
         <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">
+          <!-- <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">  -->
           <div class="nav-item col div__item d-flex align-items-center justify-content-center  ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
+            <a class="nav-link text-center fw-bold shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
+            <a class="nav-link text-center shadow-lg fw-bold  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
           </div>
         </div>        
       </div>
     </div>
   </nav>
   <!-- header -->
-    <main>              
-        <h2 class="h2 text-center">Tutoriales utiles para estacionar tu auto</h2>  
-        <div class="container-fluid container-sm d-flex align-items-center justify-content-center col bg-warning bg-opacity-25 ">
-          <section class=" row m-1 ">         
-              <h3 class="h3">Estaciona marcha atras</h3>                
-              <iframe width="560" height="315" 
-                      src="https://www.youtube.com/embed/2ip39bJv_C4"  
-                      title="YouTube video player" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowfullscreen></iframe>
-          </section> 
-      
-          <section class=" row m-1">
-              <h3 class="h3">Estacionar a 45º</h3>            
-              <iframe width="560" height="315" 
-                      src="https://www.youtube.com/embed/BNpPITcpMa0" 
-                      title="YouTube video player" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowfullscreen></iframe>
-          </section>
+    <main> 
+      <div class="tutoriales__tittle"> 
+        <h2 class="h3 text-center">Tutoriales utiles para estacionar tu auto</h2> 
+      </div>
+      <div class="tutoriales__container">
+        <div class="tutoriales__video">
+          <h3 class="h3 text__h3">Estaciona marcha atras</h3>                
+          <iframe class="youtube__tutorial" 
+                  src="https://www.youtube.com/embed/2ip39bJv_C4"  
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+        <div class="tutoriales__video">
+            <h3 class="h3 text__h3">Estacionar a 45º</h3>            
+            <iframe class="youtube__tutorial"  
+                    src="https://www.youtube.com/embed/BNpPITcpMa0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
       </div>
     </main>
  <!-- footer -->
- <div class="footer__main">
-  <div class="div__container container-fluid d-flex justify-content-evenly align-items-center row " >
-
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestras Redes</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Quienes Somos</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestros Clientes</a> </div>
-    <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="./pages/contacto.html">Contacto</a> </div>
-  
+ <div class="div__container rounded " >
+  <div class="foot__divs  rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestras Redes </a> 
   </div>
-</div>
+  <div class="foot__divs  rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/quienesSomos.html">Quienes Somos </a> 
+  </div>
+  <div class="foot__divs rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestros Clientes </a> 
+  </div>
+  <div class="foot__divs rounded "> 
+    <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/contacto.html">Contacto </a> 
+  </div>    
+</div>  
 <!-- end footer -->
     
   <!-- bootstrap scripts -->

@@ -26,43 +26,40 @@
       </button>
       <div class="collapse navbar-collapse collapse__container " id="navbarSupportedContent">
         <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">
+          <!-- <div class="navbar-nav d-flex container-fluid row align-items-center div__subcont">  -->
           <div class="nav-item col div__item d-flex align-items-center justify-content-center  ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
+            <a class="nav-link text-center fw-bold shadow-lg bg-body rounded  header__links row " href="../pages/login.html">Iniciar Sesion</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
+            <a class="nav-link text-center shadow-lg fw-bold  bg-body rounded  header__links" href="../pages/registro.html">Registrate</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/tutoriales.html">Tutoriales</a>
           </div>
           <div class="nav-item col div__item d-flex align-items-center justify-content-center ">
-            <a class="nav-link text-center shadow-lg bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link text-center shadow-lg fw-bold bg-body rounded  header__links" href="../pages/contacto.html">Contacto</a>
           </div>
         </div>        
       </div>
     </div>
   </nav>
   <!-- header -->
-    <main> 
-      <form class="row g-3 padding mx-auto form__contact">
-        <div class="col-md-6 div__nombre">
-          <label for="inputEmail4" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputEmail4">
+    <main>
+      <div class="form__container__contact d-flex justify-content-center align-items-center">
+      <form class="form__contact rounded">
+        <div class="div__fields">          
+          <input type="text" class="form-control" id="inputEmail4 " placeholder="Nombre">
         </div>
-        <div class="col-md-6 div__apellido">
-          <label for="inputPassword4" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="inputPassword4">
+        <div class="div__fields">          
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Apellido">
         </div>
-        <div class="col-12 div__tel">
-          <label for="inputAddress" class="form-label">Telefono (Opcional)</label>
-          <input type="tel" class="form-control" id="inputAddress" placeholder="(0000) 000-0000">
+        <div class="div__fields">          
+          <input type="tel" class="form-control" id="inputAddress" placeholder="Telefono: (0000) 000-0000">
         </div>
-        <div class="col-12 div__email">
-          <label for="inputAddress2" class="form-label">Mail</label>
-          <input type="email" class="form-control" id="inputAddress2" >
+        <div class="div__fields">          
+          <input type="email" class="form-control" id="inputAddress2" placeholder="Email" >
         </div>              
-        <div class="col-md-4 div__prov">
-          <label for="inputState" class="form-label">Provincia</label>
+        <div class="div__fields">          
           <select id="inputState" class="form-select">
             <option value="" hidden selected>Elije una provincia</option>
             <option value="Cordoba">Cordoba</option>
@@ -71,28 +68,30 @@
             <option value="Rio Negro">Rio Negro</option>
           </select>
         </div>
-        <div class="col-md-2 div__textarea">
-          <label for="inputZip" class="form-label">Envianos tu consulta</label>
+        <div class="div__fields">          
           <textarea class="form-control" name="textArea" id="text__area" cols="100" rows="10" placeholder="Envianos tu consulta aqui"></textarea>
         </div>
-        <div class="col-12 d-flex justify-content-center div__buttons">
-          <button type="submit" class="btn btn-primary m-1" >Enviar</button> <button class="btn btn-primary m-1" type="reset">Limpiar</button> 
-          
+        <div class="div__fields">
+          <button type="submit" class="btn btn-primary " >Enviar</button> <button class="btn btn-primary" type="reset">Limpiar</button>           
         </div>
       </form>
-
+    </div> 
     </main>
   <!-- footer -->
-  <div class="footer__main">
-    <div class="div__container container-fluid d-flex justify-content-evenly align-items-center row " >
-
-      <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestras Redes</a> </div>
-      <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Quienes Somos</a> </div>
-      <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="#">Nuestros Clientes</a> </div>
-      <div class="foot__divs col-2 d-flex container-fluid justify-content-evenly align-items-center"> <a class="foot__links nav-link bg-light rounded row text-decoration-none " href="./pages/contacto.html">Contacto</a> </div>
-    
+  <div class="div__container rounded " >
+    <div class="foot__divs  rounded "> 
+      <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestras Redes </a> 
     </div>
-  </div>
+    <div class="foot__divs  rounded "> 
+      <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/quienesSomos.html">Quienes Somos </a> 
+    </div>
+    <div class="foot__divs rounded "> 
+      <a class="foot__links nav-link fw-bold  text-decoration-none " href="#">Nuestros Clientes </a> 
+    </div>
+    <div class="foot__divs rounded "> 
+      <a class="foot__links nav-link fw-bold  text-decoration-none " href="../pages/contacto.html">Contacto </a> 
+    </div>    
+</div>  
   <!-- end footer -->
     
   <!-- bootstrap scripts -->

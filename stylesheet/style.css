@@ -1,132 +1,46 @@
-.div {
-  /* background-color: rgb(228, 74, 74) ;*/
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 10px;
-  /*justify-content: center !important;
-    align-items: center !important;*/ }
-
-.a {
-  /*margin-top: 40px !important;*/
-  width: 150px;
-  height: 30px;
-  margin: 0px;
-  text-align: center; }
-
-.div__login, #form__labels, #form__fields {
+.flexrow__extend, .tutoriales__tittle {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-  margin: 30px; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
 
-.div__buttons, #form__buttons {
+.flexcolumn__extend, .form__container__login, .form__container__login .form__login, .signup__container, .signup__container .legend__form, .tutoriales__container, .somos__main, .somos__main .historia__empresa, .somos__main .historia__empresa .parrafo__historia, .somos__main .proposito__empresa, .somos__main .proposito__empresa .parrafo__proposito {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.flexcolumn__evenlyextend, .div__container {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px; }
+  flex-direction: column; }
+
+.flexrow__evenlyextend {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row; }
+
+/*
+@mixin boxSize ($width,$height){
+    height: $height !important;
+    width: $width !important;
+    
+}
+
 
 .singup__button {
-  height: 40px !important;
-  width: 120px !important; }
+    @include boxSize(120px,40px ) ;
 
-.nombre__fields {
-  background-color: #619161; }
-
-.apellido__fields {
-  background-color: #619161; }
-
-.phone__fields {
-  background-color: #619161; }
-
-.mail__fields {
-  background-color: #619161; }
-
-.prov__fields {
-  background-color: #619161; }
-
-.solic__fields {
-  background-color: #619161; }
-
-.singup__labels {
-  background-color: #619161;
-  color: white;
-  margin-left: 10px; }
-
-#fieldset__form {
-  background-color: #7696d3 !important; }
-
-.footer__div {
-  background-color: #e44a4a; }
-
-.div__buttons, #form__buttons {
-  height: 70px; }
-
-.div__buttons button, #form__buttons button {
-  width: 200px;
-  margin: 10px !important;
-  background-color: white;
-  color: black !important; }
-
-/*.div__textarea{
-    width: map-get($divContact, textareaSize) !important;*/
-@media screen and (min-width: 320px) {
-  .div__textarea {
-    width: 500px !important; }
-  .form-control {
-    margin: 10px; }
-  .form-label {
-    margin: 10px; }
-  .form__contact {
-    background-color: #7696d3; } }
-
-.header__links:hover {
-  transform: scale(1.1) translatey(-5px); }
-
+}*/
+/*.header__links:hover {
+   
+}*/
 * {
   box-sizing: border-box; }
 
-#fieldset__form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  #fieldset__form #legend__form #form__header__registro {
-    text-align: center; }
-  #fieldset__form .singup__labels {
-    display: none;
-    /*height: 25px;
-        width: 75px;*/ }
-  #fieldset__form .singup__field {
-    width: 200px;
-    height: 35px;
-    margin: 10px; }
-  #fieldset__form .singup__button {
-    margin-left: 0px;
-    margin-right: 5px;
-    width: 90px;
-    height: 35px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); }
-  #fieldset__form .form__buttons {
-    width: 300px;
-    height: 35px;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row; }
-
-@media screen and (min-width: 768px) {
-  #fieldset__form {
-    background-color: #afaeae; }
-    #fieldset__form .singup__labels {
-      display: flex;
-      width: 200px;
-      height: 35px;
-      padding: 10px;
-      align-items: center; } }
-
+/*header*/
 .collapse__container {
   padding: 10px !important; }
 
@@ -136,7 +50,8 @@
 
 .header__nav {
   padding: 10px;
-  margin: 5px; }
+  width: 97% !important;
+  margin: 10px 1.5% 10px 1.5% !important; }
 
 .div__item {
   height: 75px;
@@ -144,7 +59,7 @@
 
 .header__links {
   border: 1px solid black;
-  margin: 0px !important;
+  margin: 10px !important;
   width: 120px; }
 
 .link__home {
@@ -156,8 +71,10 @@
   width: 100px;
   height: 100px; }
 
+/*end header*/
+/*body*/
 .sec__cont {
-  background-color: grey;
+  background-color: lightgray;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   width: 100% !important;
   margin: 10px !important;
@@ -166,13 +83,17 @@
 .main__container {
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0px; }
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%; }
 
 .text__body {
   margin-top: 10px; }
 
 .slide img {
   height: 30vh; }
+
+.img__carousel {
+  object-fit: contain; }
 
 @media screen and (min-width: 768px) {
   .slide img {
@@ -199,30 +120,31 @@
     height: 50px;
     margin-left: 35%;
     margin-top: 5%;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    object-fit: scale-down; }
   .container__body .mechanic__container {
     padding: 5px;
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
     height: 250px;
     width: 300px;
     margin: 5px;
-    border: 1px solid black; }
+    border: 1px solid black;
+    background-color: lightgray; }
   .container__body .carwash__container {
     padding: 5px;
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
     height: 250px;
     width: 300px;
     margin: 5px;
-    border: 1px solid black; }
+    border: 1px solid black;
+    background-color: lightgray; }
   .container__body .safety__container {
     padding: 5px;
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.1);
     height: 250px;
     width: 300px;
     margin: 5px;
-    border: 1px solid black; }
+    border: 1px solid black;
+    background-color: lightgray; }
   .container__body .text__content {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     margin: 10px; }
   @media screen and (min-width: 768px) {
@@ -233,16 +155,185 @@
     .container__body .container__body .safety__container {
       width: 250px; } }
 
+/*end body*/
+/*footer*/
 .div__container {
-  margin-top: 20px !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  width: 100%; }
+  border: 1px solid black;
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%;
+  padding: 10px;
+  background-color: lightgray; }
+  @media screen and (min-width: 768px) {
+    .div__container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      padding: 10px; }
+      .div__container .foot__divs {
+        margin: 10px 5px 10px 5px; } }
   .div__container .foot__divs {
-    margin: 3px;
-    padding: 5px; }
-  .div__container .foot__links {
-    width: 100%;
-    height: 30px;
+    margin: 10px 5px 10px 5px; }
+  .div__container .foot__divs:hover {
+    background-color: white; }
+
+/*end footer*/
+/*Login*/
+.form__container__login {
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%;
+  padding: 10px 0px 10px 0px; }
+  .form__container__login .form__login {
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5); }
+
+.check__label {
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+/*End login*/
+/*Contacto*/
+.form__container__contact {
+  width: 90%;
+  margin: 10px 5% 10px 5%;
+  padding: 20px;
+  background-color: lightgray; }
+
+.form__contact {
+  padding: 10px;
+  border: 1px solid black; }
+
+.div__fields {
+  margin: 5px; }
+
+/*End contacto*/
+/*Registro*/
+.signup__container {
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%; }
+  .signup__container .main__form {
+    background-color: lightgrey;
+    width: 300px; }
+  .signup__container .legend__form .form__header__registro {
     text-align: center;
-    border: 1px solid black; }
+    font-size: 20px; }
+  .signup__container .signup__div {
+    margin: 10px; }
+  .signup__container .singup__button {
+    width: 100px;
+    margin: 3px !important; }
+
+/*End Registro*/
+/*Tutoriales*/
+.tutoriales__tittle {
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%; }
+
+.tutoriales__container {
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%; }
+
+@media screen and (min-width: 512px) {
+  .youtube__tutorial {
+    width: 480px;
+    height: 320px;
+    margin: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .youtube__tutorial {
+    width: 750px;
+    height: 600px;
+    margin: 10px; } }
+
+@media screen and (min-width: 1300px) {
+  .youtube__tutorial {
+    width: 1280px;
+    height: 600px;
+    margin: 15px; } }
+
+.text__h3 {
+  text-align: center; }
+
+/*End Tutoriales*/
+/*Quienes Somos*/
+.somos__main {
+  width: 97%;
+  margin: 10px 1.5% 10px 1.5%; }
+  .somos__main .historia__empresa {
+    margin: 20px 0px 20px 0px; }
+    .somos__main .historia__empresa .img__historia {
+      width: 300px;
+      height: 300px;
+      object-fit: contain; }
+    .somos__main .historia__empresa .parrafo__historia {
+      text-align: justify;
+      width: 300px;
+      height: 300px;
+      font-size: 20px; }
+  .somos__main .proposito__empresa {
+    margin: 20px 0px 20px 0px; }
+    .somos__main .proposito__empresa .img__proposito {
+      width: 300px;
+      height: 300px;
+      object-fit: contain; }
+    .somos__main .proposito__empresa .parrafo__proposito {
+      text-align: justify;
+      width: 300px;
+      height: 300px;
+      font-size: 20px; }
+  @media screen and (min-width: 768px) {
+    .somos__main .img__proposito {
+      margin-right: 20px; }
+    .somos__main .img__historia {
+      margin-right: 20px; }
+    .somos__main .proposito__empresa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 20px 0px 20px 0px; }
+    .somos__main .historia__empresa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 20px 0px 20px 0px; } }
+  @media screen and (min-width: 1280px) {
+    .somos__main .proposito__empresa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 97%;
+      margin: 20px 0px 20px 0px; }
+      .somos__main .proposito__empresa .parrafo__proposito {
+        text-align: justify;
+        width: 97%;
+        height: 300px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+    .somos__main .img__proposito {
+      margin-right: 20px; }
+    .somos__main .img__historia {
+      margin-right: 20px; }
+    .somos__main .historia__empresa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin: 20px 0px 20px 0px;
+      width: 97%; }
+      .somos__main .historia__empresa .parrafo__historia {
+        text-align: justify;
+        width: 97%;
+        height: 300px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; } }
+
+/*End quienes somos*/
